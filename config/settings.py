@@ -31,7 +31,6 @@ ALLOWED_HOSTS = [
 ]
 # https://todoappbekki.netlify.app/
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'todo',
     'rest_framework',
@@ -58,6 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
+
 
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',

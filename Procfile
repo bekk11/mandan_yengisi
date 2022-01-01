@@ -1,2 +1,1 @@
-web: gunicorn djangoherokuapp.wsgi --log-file -
-worker: python manage.py runserver
+web: gunicorn config.wsgi --log-file -
